@@ -111,5 +111,75 @@ if (age >= 18) {
 }
 </br>
 </h4>
+<div>
+<h1>Bugun nima o'rgandim? <br>
+Sana: 29 chi yanvar.
+</h1>
+
+<p>
+  indexOf() - Bu metod tanlangan atributdagi qaysidir harfni nechinchi turganini hisoblaydi. <br> 
+  <strong>Eslatma!</strong> <br>
+  bu atribyutni boshidan oxiriga qarab ishlaydi. <strong>lastIndexOf() </strong> bu oxiridan boshiga qarab sanaydi.
+</p>
+<p>
+<strong>Ishlatilishi </strong>
+<br>
+<i>let email = amirxonmatchanov@gmail.com </i><br>
+<i> console.log(email.indexOf('o'))</i>
+</p>
+
+<p>slice() - Bu metof tanlangan atributdagi korsatilgan harf yoki raqamni olib keladi </p> <br>
+<p>Ishlatilishi!</p>
+<i>let name = Amirxon</i><br>
+<i>console.log(name.slice(4, 5))</i><br>
+<b>javobi x chunki sanoq 0 dan boshlanadi</b>
+<p>yoki boshqacha qiladigan bo'lsak</p>
+<i>console.log(name.slice(2))</i>
+<p>bunda javobi 0 1 2 chidan keyingi xarflarni hammasini oladi yani rxon boladi.</p>
+
+<p>substr() - Bu metod slice() metodiga yaqin metod hisoblaniladi lekin farqi bo'ladi. </p>
+<strong>Farqi va Ishlatilishi !</strong>
+<i> let name = amirxonmatchanov</i>
+<i>console.log(name.substr(4, 10))</i>
+<p>javobi xonmatchan  yani 4 tadan keyin yana 10 ta oladi.</p>
+
+
+<p> replace()- Bu metod tanlangan atribyutni qaysidir joyini yoki bir harfini o'zgartirish uchun ishladtiladi </p>
+<p>Ishlatilishi</p>
+<i>let name = amirxonmatchanov</i>
+<i>console.log(name.replace('a', 'v'))</i>
+<b>Javobi vmirxonmatchanov yani a ni v bilan almashtirib qo'ydi</b>
+
+<p> charAt() - Bu metod bizga birinchi harakter yoki harfni olib beradi</p>
+
+<i>let name = amirxonmatchanov</i>
+<i>console.log(name.charAt())</i>
+<b> Javobi a </b>
+
+
+<p>toUpperCase va toLowerCase bu metodlar atribyutni toliq katta harfga yoki toliq kichik harfga ogirib beradi.</p>
+<p>console.log(name.toUpperCase())</p>
+<p>console.log(name.toLowerCase())</p>
+<p>javobi AMIRXONMATCHANOV va oz holidek amirxonmatchanov</p>
+
+
+
+<p>trim() - bu metod belgilangan atributdan oxiri va boshida joy bo'lda masalan ( amirxon ) bo'lsa shu joyni olib tashlaydi.</p>
+<i>console.log(name.trim())</i>
+<i> javobi ochiq joylarni olib tashlaydi </i>
+
+
+<p>split() - bu metod array qilish uchun ishlatiladi </p>
+<i>console.log(name.split())</i>
+<i>javobi ['amirxonmatchanov']</i>
+
+
+<p>tamplate string -  bu stringga string qo'shishni oson yo'li </p>
+<i>let result = a 
+  let  name = b 
+  let ism = l</i>
+  <i>let hammasi = `hello world ${result}, ${name}, ${ism} shunaqa `</i>
+  <b>console.log(hammasi)</b>
+</div>
 </body>
 </html>
