@@ -326,5 +326,81 @@ Sana:1 fevral
 <i>let age = 20 </i>
 <i>console.log( age != 10)</i>
 <b>Javobi true chunki 10 20 ga teng emas ! teskarisini ishlatadi not bilan bir xil</b>
+
+<h1>Bugun nima organdim? <br>
+Sana: 2 fevral
+</h1>
+
+<p> Turlarni o'zgartirish, for loop, while ,do while , if satment <br>
+masalan stringni numberga yoki teskarisi
+</p>
+<i>let son = '100'</i>
+<i>agardan buni consolega chiqaradigan bo'lsak string bolgani uchun javobi '100' bo'ladi</i>
+<i>let son = '100'  </i>
+<i>turniOzgartirdik = Number(son)</i>
+
+<i>console.log(turniOzgartirdik + 1)</i>
+<b>101</b>
+
+
+<h1>Amaliyot N1</h1>
+<p>amaliyotdan ko'zlanayotilgan maqsad <br>
+kriishingiz bilan bitta brompt chiqadi uni ichiga ism berishligingiz 
+kerak va shu ismni bosh harfini katta boshqasini kichik qilib alert bo'lib chiqishi kerak!</p>
+
+<i>let name = prompt('ismingizini kiriting!')</i>
+<i>let boshHarfi = name.charAt().toUpperCase()</i>
+<i>let davomi  = name.slice(1).toLowerCase()</i>
+<i>let result = boshHarfi + davomi</i>
+<i>alert('Salom' + ${result})</i>
+
+<b>Javobda endi har qanday ishm yoki text berilsa bosh harfi katta davomidagilari kichik boladi </b>
+
+<h1>For loop</h1>
+<p> forni ishlatishimizdan maqsad kodni qisqa qilib yaxshi ishlash </p>
+<p> tassavur qilaylik 200 ta ismni bosh harfini upper case qilishimiz kerak qolda vaqt kop ketadi osonlashtirish uchun for ishlatiladi</p>
+
+<i>const  names = ['sanju','ali','vali','qumi']</i>
+<i> for ( let i = 0 ;i < names.length ; i++){
+    <i>let boshHarf = names[i].charAt().toUpperCase()</i>
+    <i>let davomi = names[i].slice().toLowerCase()</i>
+    <i>let reult = boshHarf + davomi</i>
+    <i>console.log(` ismlat , ${result}`)</i>
+}</i>
+<b>Javobi bosh harfi katta davomi kichik harf bo'ladi </b>
+
+<h1>While va Do While </h1>
+<p>while  for bilan deyarli bir hil sinatksisda</p>
+<i>
+    let i = 0 <br>
+    while(i < 10)
+    <br>{
+        console.log(i)
+
+       <br> i++
+    }
+    
+</i>
+<b>0 dan 9 gacha sanaydi 10 marta aylanadi </b>
+
+<p>do while ni whiledan faqi do while shartga qaramasdan tekshirmasdan 1 marta ishlaydi </p>
+
+<i>
+    let i = 5 <br>
+    do { <br> console.log(i) <br> i++  <br>}
+    while(i < 5)
+
+</i>
+<b> natijada consolega 5 chiqadi chunki i 5 ga teng edi va do ni ichiga tushdi va 5 ga 1 qoshilib 6 bo'ldi lekin 6 5dan kichik emas va shu yerda loop sinadi </b>
+
+<h1>if statment </h1>
+<p>ifni biz shartni tekshirish uchun ishlatamiz </p>
+
+<i>let son = 5 </i>
+<i>if(son >= 6)</i>
+<i>{console.log('soni 6 dan kam')}</i>
+
+<i>const pass = '123456789'</i>
+<i>if(pass >= 8) <br> {console.log('parol yetarlischa')}</i>
 </body>
 </html>
