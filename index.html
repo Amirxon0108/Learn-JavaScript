@@ -406,5 +406,61 @@ kerak va shu ismni bosh harfini katta boshqasini kichik qilib alert bo'lib chiqi
 <h1>Bugun nima o'rgandim? <br>
 Sana: 03 fevral</h1>
 <p>Sql dan in between va laraveldan validatsiyani ko'rib chiqdim </p>
+ <h1> Bugun nima o'rgandim? <br>
+ Sana: 4 fevral</h1>
+
+ <b>If, else if , else , and , or , 
+ </b>
+
+ <p>else if bu shartni tekshishir uchun ishlatiladi else esa shart ishlamaganda ishlaydi </p>
+ <i>
+    let pass = '1234567amir' <br>
+
+    if(pass.length >= 12)<br>
+    { console.log('parol juda uzun ')}<br>
+     else if(pass.length >= 8)<br>
+     {cpnsole.log('parol yetarlicha ')}<br>
+     else{console.log('parol juda qisqa ')}<br>
+
+ </i>
+<b>kiritilgan parol 12 tada ko'p bo'lsa 1 chi if ishlaydi va to'xtaydi pastga o'tmaydi 
+    lekin kam bo'lsa else if ishlaydi u togri kelsa toxtaydi bolmasa else ishlab ketadi  </b>
+
+    <p>
+        and (&&) va or (||) 
+    </p>
+    <i>
+            let pass = '1234567amir' <br>
+
+    if(pass.length >= 12 && pass.incloudes('@'))<br>
+    { console.log('parol juda uzun ')}<br>
+     else if(pass.length >= 8 ||(pass.incloudes('.') && pass.length >= 5) )<br>
+     {cpnsole.log('parol yetarlicha ')}<br>
+     else{console.log('parol juda qisqa ')}<br>
+    </i>
+<b> Bu yerda 1 chi if ishlasi uchun uzunligi 12 ta va @ belgisi bo'lsa ishlaydi bolmasa keyingi shartga o'tib ketadi 
+    2 chida 8 ta belgidan kop bolsa yoki parolda . ishlatilgan bo'lsa va 5 ta dan kop yoki teng bolsa true beradi 
+</b>
+
+<b>switch case </b>
+<p>biz switch case nio huddi ifni ishlatgan maqsadda ishlatamiz lekin bu ifga qaraganda koproq shart bo'lsa ishlatishga osonlik tug'diradi </p>
+
+<i>let baho = 5 </i>
+<i>swith(baho) {    <br>
+case 1: console.log("darsga umuman tayyor emas")<br>
+break<br>
+case 2: console.log("umuman hech narsani bilmaydi ")    <br>
+break<br>
+case 3: console.log("javob berishda qiynaldi ")<br>
+break<br>
+case 4: console.log("yaxshi lekin zo'r emas")<br>
+break<br>
+case 5: console.log("Darsga juda zo'r tayyorlangan")<br>
+break<br>
+default:<br>
+console.log("bunday baho yoq ")
+}</i>
+
+
 </body>
 </html>
