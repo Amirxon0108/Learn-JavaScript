@@ -461,6 +461,88 @@ default:<br>
 console.log("bunday baho yoq ")
 }</i>
 
+<h1>Bugun nima o'rgandim? <br>
+Sana: 5 chi fevral</h1>
 
+<p>Block scope + Katta Amaliyot</p>
+
+<h1>Block Scope</h1>
+<p>bizda ozi ikki hil scope bor public va private</p>
+
+<i> 
+    let name ='ali' - bu public <br>
+
+    if(true){<br>
+        console.log(name) - hozir ham public<br>
+    }
+</i>
+
+<i>
+    let name ='ali' - bu public <br>
+
+    if(true){<br>
+        let name= 'Amirxon'<br>
+        console.log(name) - hozir ham private<br>
+        Amirxon chiqadi<br>
+    }
+</i>
+
+<h1>Amaliyot N2</h1>
+
+<p>1) prompt orqali yosh kiritasiz va qachon tugilgani nechi oy hafta .... larni hisoblab alert qilish kerak  <br>
+   2) prompdan ism kiritamiz va u ism arrayda bolsa bor bolmaasa yoq deb javob qaytarish kerak <br>
+   3) arrayni oxiriga bek qo'shish kerak<br>
+   4) promptdan kiritilgan viloyatni aholisini chiqaramiz<br>
+   5) prompga kiritilgan textga meyor qo'yamiz va kop bolsa qancha kop kam bo'lsa qancha kam ligini yozamiz<br>
+</p>
+<b>1</b>
+<i>     const yosh = +prompt('Yoshingizni kiriting')</i>
+<i>      console.log(` yoshingiz ${2026 - yosh}. ${yosh *12} oy yashagansiz`)</i>
+
+<b>2</b>
+<i>
+const ismlar = ['amir', 'ali', 'ashir'] <br>
+
+const ism = prompt('ism kiriting')<br>
+
+if(ism.length){<br>
+    alert(`${ism} bor`)<br>
+}else{<br>
+    alert (`${ism} yo'q`)<br>
+}
+</i>
+<b>3</b>
+<i>const ismlar = ['amir', 'ali', 'ashir']</i>
+<i>for(let i =0; i>=ismlar.length; i++){ <br>
+    let result = ismlar[i] + 'bek'<br>
+    alert(result)<br>
+}
+</i>
+<b>4</b>
+ <i>let viloyat = prompt('viloyat kiriting')</i>
+
+<i> switch('viloyat'){ <br>
+    case "Xorazm": <br>
+    console.log('Xorazm 1.1 mln axolidan tashkil topgan ') <br>
+    break<br>
+    case "toshkent":<br>
+    console.log('Toshkentda 6 mln axoli bor ')<br>
+    break<br>
+    default :<br>
+    console.log('bunday viloyat yoq ')<br>
+ }</i>
+
+ <b>5</b>
+ <i>const parol = prompt("Parol kiriting ")</i>
+ <i>let meyyor = 20</i>
+
+ <i>if (parol.length > meyor){ <br>
+console.log(`parol ${parol.length - meyor} taga kop`) <br>
+}else if(meyor > parol.length){<br>
+    console.log(`meyorga yetish uchun ${meyor - parol.length} ta belgi kerak `)<br>
+}else{<br> 
+    console.log('meyorida')<br>
+}
+ </i>
 </body>
 </html>
