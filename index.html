@@ -681,5 +681,117 @@ Bugun nima o'rgandim? <br> Sana: 6 chi fevral
     Sana: 08 fevral </h1>
 
     <p>Bugun takrorlash qildim </p>
+
+        <h1>Bugun nima o'rgandim? <br> 
+        Sana: 09 fevral
+        </h1>
+
+        <b>callback function, foreach method , object, add methods to object</b>
+
+        <h1>Callback function nima ?</h1>
+        <p>Callback function - bu biror boshqa functsiyaga argument sifatida berilgan funktsiya. Bu bir malum ish tamom bo'lgandan keyin ishga tushadi</p>
+
+
+        <i>
+            function salomBer(ism) { <br>
+                console.log( 'Salom' + ism )<br>
+            }<br>
+
+            function foydalanuvchi(callback) {<br>
+                let ism = 'Amirxon'<br>
+                callback(ism)<br>
+            }<br>
+
+            foydalanuvchi(salomBer)
+        </i>
+
+        <b>Bu yerda nima bo‘lyapti?<br>
+
+salomBer — callback function<br>
+
+foydalanuvchi funksiyasi ichida callback chaqirilyapti<br>
+
+Natija:<br>
+
+Salom Ali
+</b>
+
+        <h1>
+            foreach nima?
+        </h1>
+        <b>foreach - bu array(massiv) ichidagi elementlar uchun alohida funksiya ishlatib beradigan metod</b>
+
+    <i>
+         const ismlar = ['Amir', 'ali', 'vali', 'jasur']<br>
+
+         let arrayIsmlar = []<br>
+
+         ismlar.foreach(function(ism, i){<br>
+           let new = ism.charAt().toUpperCase() + ism.slice(1).toLowerCase() + 'bek'<br>
+            console.log(new, i)<br>
+            arrayIsmlar.push(new)<br>
+         })
+        
+        </i>
+
+       <i> console.log(arrayIsmlar); </i>
+
+        <b>javobi ["Amirbek", "Alibek", "Valibek", "Jasurbek"]</b>
+        
+        <h1>Obyekt  nima?</h1>
+        <b>Obyekt - bu kalit + qiymat (key: value) ko‘rinishida ma’lumot saqlaydigan tuzilma.</b>
+
+        <i>
+            const users{ <br>
+        name: 'Amirxon',<br>
+        age : 18,<br>
+        location: 'Xorazm'  <br>
+        };<br>
+        console.log(users.name)<br>
+        console.log(users['name'])
+        <b>javobi ikkalasidayam Amirxon</b>
+    
+    </i>
+
+    <h1>Obyektga metod qo'shish</h1>
+     
+       <i>
+        const users{ <br>
+        name: 'Amirxon',<br>
+        age : 18,<br>
+        location: 'Xorazm'  <br>
+        login : function() {
+            console.log(  this.name + 'login qilindingiz')
+        }
+        };<br>
+        let users.age = 17
+        console.log(users.age)
+        <b>yosh 17 ga ozgardi</b>
+       console.log('users.login()')
+        </i>
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </body>
+
 </html>
